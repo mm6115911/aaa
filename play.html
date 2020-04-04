@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        document.getElementsByTagName('button').foreach((i) => {
-            i.onclick = () => {
-                document.getElementById('result').innerText = "你输了";
-            }
+        document.getElementsByClassName('x').forEach(element => {
+            element.onclick = document.getElementById('result').innerText = "你输了";    
         });
     </script>
 </head>
 
 <body>
     <p>just play</p>
-    <p><button>石头</button><button>剪刀</button><button>布</button></p>
+    <p><button class="x">石头</button><button class="x">剪刀</button><button class="x">布</button></p>
     <p>电脑:<span id="computer"></span></p>
     <p id="result"></p>
 </body>
